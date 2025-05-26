@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Thành Viên</title>
+    <link rel="icon" href="img/favicon.ico" type="image/png">
+</head>
+<body>
+    <header>
+        <a href="trangchu.html">
+            <img src="img/logo.png" alt="">
+        </a>
+        <nav>
+            <a href="trangchu.html">Trang Chủ</a>
+            <a href="gioithieu.html">Giới Thiệu</a>
+            <a href="sanpham.html">Sản Phẩm</a>
+            <a href="tintuc.html">Tin Tức</a>
+            <a href="dangnhap.html">Đăng Nhập</a>
+            <a href="dangky.html">Đăng Ký</a>
+            <a href="lienhe.html">Liên hệ</a>
+        </nav>
+    </header>    
+
+    <main>
+        <fieldset>
+            <legend>
+                <h3>
+                    Đăng Ký
+                </h3>
+            </legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td align="left" valign="top">
+                            <label for="email"><b>Email</b></label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" placeholder="Vui lòng nhập email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="top">
+                            <label for="password"><b>Mật khẩu</b></label>
+                        </td>
+                        <td>
+                            <input type="password" id="password" placeholder="Vui lòng nhập mật khẩu" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="top">
+                            <label for="confirm_password"><b>Nhập lại mật khẩu</b></label>
+                        </td>
+                        <td>
+                            <input type="password" id="confirm_password" placeholder="Vui lòng nhập mật khẩu" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="top">
+                            <b>Cấp độ thành viên</b>
+                        </td>
+                        <td>
+                            <input type="radio" id="bac" name="member_level" value="bac" checked>
+                            <label for="bac">Bạc</label>
+                            <input type="radio" id="vang" name="member_level" value="vang">
+                            <label for="vang">Vàng</label>
+                            <input type="radio" id="bachkim" name="member_level" value="bachkim">
+                            <label for="bachkim">Bạch Kim</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="top">
+                            <b>Ảnh đại diện</b>
+                        </td>
+                        <td>
+                            <input type="file" id="avatar" accept="image/*">
+                            <span id="file-chosen">No file chosen</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="left">
+                            <span>Thông qua việc tạo tài khoản, bạn đồng ý với <a href="#">Điều khoản & Quyền riêng tư của chúng tôi.</a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="left">
+                            <button type="button">Hủy</button>
+                            <button type="submit">Đăng ký</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </main>
+    <footer>
+        © 2021 Bản quyền thuộc về FreeezeVN.
+        <a href="#logo">facebook</a>
+        <a href="#logo">twitter</a>
+        <a href="#logo">pinterest</a>
+        <a href="trangchu.html">Về Đầu Trang</a>
+    </footer>
+</body>
+</html>
