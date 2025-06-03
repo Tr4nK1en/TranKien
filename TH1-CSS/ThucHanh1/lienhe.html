@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frozen Yorgurt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <style>
+        button{
+            background-color: rgb(25, 240, 255);
+            color: white;
+            font-weight: bold;
+            box-shadow: inset -2px -2px 10px 2px rgb(61, 150, 202);
+            border-radius: 8px;
+        }
+        div{
+            background-color: aliceblue;
+        }
+        fieldset{
+            background-color: rgb(255, 245, 216);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="trangchu.html">
+            <img src="img/logo.png" alt="">
+        </a>
+        <nav>
+            <table style="width: 100%;">
+                <tr>
+                    <td>
+                        <a href="trangchu.html"><button>Trang Chủ</button></a>
+                        <a href="gioithieu.html"><button>Giới Thiệu</button></a>
+                        <a href="sanpham.html"><button>Sản Phẩm</button></a>
+                        <a href="tintuc.html"><button>Tin Tức</button></a>
+                        <a href="dangnhap.html"><button>Đăng Nhập</button></a>
+                        <a href="dangky.html"><button>Đăng Ký</button></a>
+                        <a href="lienhe.html"><button>Liên hệ</button></a>
+                    </td>
+                    <td style="text-align: right;">
+                        <a href="dangnhap.html"><i class="fa fa-user-circle-o" style="font-size:24px"></i></a>
+                        <i class="fa fa-search" style="font-size:20px"></i>
+                        <input type="text" >
+                        <button>Search</button>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+    </header> 
+    <main>
+        <div>
+            <h1>Liên hệ</h1>
+            <img src="lienhe/check-in.png" alt="">
+            <h2>Địa chỉ: 0123, Toà Nhà ABC, TP.Cần Thơ</h2>
+            Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu mẫu bên dưới.
+            Xin cảm ơn. 
+        </div>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Góp ý</legend>
+                    <table>
+                        <tr>
+                            <td style="width: 75px;">Họ tên:</td>
+                            <td><input style="width: 200px;" type="text" placeholder="Vui lòng nhập Họ Tên của bạn"></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 75px;">Email:</td>
+                            <td><input style="width: 200px;" type="text" placeholder="Vui lòng nhập địa chỉ Email"></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 75px;">
+                                Chủ đề:
+                            </td>
+                            <td>
+                                <select name="a" id="">
+                                    <option value="" selected>Hãy Chọn Chủ Đề</option>
+                                    <option value="">Về Sản Phẩm/Dịch Vụ</option>
+                                    <option value="">Về Đăng Ký/Đăng Nhập</option>
+                                    <option value="">Góp Ý Khác...</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nội dung:</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <textarea style="height: 100px; width: 400px;" name="" id="" placeholder="Nội dung cần liên hệ"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;"><input type="button" name="" id="" value="Gửi" onclick="alert('Góp ý của bản đã được gửi đi!')"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        © 2021 Bản quyền thuộc về FreeezeVN.
+        <a href="#logo">facebook</a>
+        <a href="#logo">twitter</a>
+        <a href="#logo">pinterest</a>
+        <a href="lienhe.html">Về Đầu Trang</a>
+    </footer>
+</body>
+</html>
