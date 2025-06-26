@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Chủ</title>
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylelienhe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="./scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <img id="header-img1" src="images/header-img1.png" alt="">
+        <img id="header-img2" src="images/header-img2.png" alt="">
+        <img id="header-img3" src="images/header-img3.png" alt="">
+        <a id="#top" href="trangchu.html"><img src="images/logo.png" alt=""></a>
+        <nav>
+            <a href="trangchu.html">Trang Chủ</a>
+            <a href="gioithieu.html">Giới Thiệu</a>
+            <a href="sanpham.html">Sản Phẩm</a>
+            <a href="tintuc.html">Tin Tức</a>
+            <a href="dangnhap.html">Đăng Nhập</a>
+            <a href="dangky.html">Đăng Ký</a>
+            <a href="lienhe.html">Liên Hệ</a>
+            <div class="search-container">
+                <form method="get" action="#">
+                    <div class="input-container">
+                        <input id="search" type="text" placeholder="Nhập nội dung cần tìm..." name="search">
+                        <i class="fa fa-search icon-white"></i>
+                        <i class="fa fa-shopping-cart icon-pink" onclick="return GoCart();"></i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <article>
+
+
+        <h1>LIÊN HỆ</h1>
+            <div class="icondiv" style="display: inline-block;"><i class="fas fa-map-marker-alt red"></i></div>
+            <b>Địa chỉ: 0123, Toà Nhà ABC, TP.Cần Thơ</b>
+            Nếu bạn có góp ý, vui lòng liên hệ bằng thư điện tử hoặc sử dụng biểu mẫu bên dưới.
+            Xin cảm ơn. 
+        <h1>GÓP Ý</h1>
+
+        <div class="container">
+            <div>
+                <div class="icondiv"><i class="fa fa-user"></i></div>
+                <input type="text" placeholder="Vui lòng nhập họ tên của bạn">
+            </div>
+
+            <div>
+                <div class="icondiv"><i class="fa fa-envelope"></i></div>
+                <input type="text" placeholder="Vui lòng nhập địa chỉ Email">
+            </div>
+
+            <div>
+                <div class="icondiv"> <i class="fas fa-list"></i></div>
+                <select name="" id="">
+                    <option value="">Về Sản Phẩm/ Dịch Vụ</option>
+                    <option value="">Thắc Mắc Khác...</option>
+                </select>
+            </div>
+
+            <div>
+                <div class="icondiv" style="margin-top: 80px;"> <i class="fas fa-file-alt"></i></div>
+                <textarea name="" id="" placeholder="Nội dung cần liên hệ"></textarea>
+            </div>
+            <div>
+                <button class="submit">Gửi</button>
+            </div>
+        </div>
+
+        </article>
+
+    </main>
+    <footer>
+        <p>&copy; 2021 Bản quyền thuộc về FreeezeVN.
+            <a href="#"><i></i></a>
+            <a href="#"><i></i></a>
+            <a href="#"><i></i></a>
+        </p>
+    </footer>
+    <a href="#top" class="uptoTOP"><img src="images/top.png" width="60"></a>
+</body>
+
+</html>

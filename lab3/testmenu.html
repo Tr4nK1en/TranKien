@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    /* Style cho icon */
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+      padding: 10px;
+      background-color: #3498db;
+      color: white;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    /* Style cho menu */
+    .menu {
+      display: none; /* Ẩn mặc định */
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background-color: #f1f1f1;
+      width: 200px;
+    }
+
+    .menu.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ICON (có thể dùng <i> nếu dùng thư viện icon) -->
+  <div class="menu-icon" onclick="toggleMenu()"></div>
+
+  <!-- MENU -->
+  <div class="menu" id="menu">
+    <p onclick="trangchu.html">🔹 Tùy chọn 1</p>
+    <p>🔹 Tùy chọn 2</p>
+    <p>🔹 Tùy chọn 3</p>
+  </div>
+
+  <!-- Script để bật/tắt menu -->
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>

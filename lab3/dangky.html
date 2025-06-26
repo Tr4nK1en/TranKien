@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Chủ</title>
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styleregister.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./scripts.js"></script>
+</head>
+<body>
+    <header>
+        <img id="header-img1" src="images/header-img1.png" alt="">
+        <img id="header-img2" src="images/header-img2.png" alt="">
+        <img id="header-img3" src="images/header-img3.png" alt="">
+        <a id="#top" href="trangchu.html"><img src="images/logo.png" alt=""></a>
+        <nav>
+            <a href="trangchu.html">Trang Chủ</a>
+            <a href="gioithieu.html">Giới Thiệu</a>
+            <a href="sanpham.html">Sản Phẩm</a>
+            <a href="tintuc.html">Tin Tức</a>
+            <a href="dangnhap.html">Đăng Nhập</a>
+            <a href="dangky.html">Đăng Ký</a>
+            <a href="lienhe.html">Liên Hệ</a>
+            <div class="search-container">
+                <form method="get" action="#">
+                    <div class="input-container">
+                        <input id="search" type="text" placeholder="Nhập nội dung cần tìm..." name="search">
+                        <i class="fa fa-search icon-white"></i>
+                        <i class="fa fa-shopping-cart icon-pink" onclick="return GoCart();"></i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Đăng Ký</h1>
+        <div>
+            <form action="dangnhap.html" onsubmit="return register(this);">
+                <div><i class="material-icons pushDOWN" style="font-size: 25px;">email</i></i>
+                <input type="email" name="gmail" placeholder="Hãy nhập Email" required></div>
+                <div><i class="fa fa-key" style="font-size: 25px;"></i>
+                <input class="pushUP" type="password" name="psw" required placeholder="Hãy nhập Mật Khẩu"></div>
+                <div><i class="fa fa-key" style="font-size: 25px;"></i>
+                <input class="pushUP" type="password" name="repsw" required placeholder="Hãy nhập lại Mật Khẩu"></div>
+                <div>
+                    <i class="fa fa-users" style="font-size: 120%;"></i>
+                    <input type="radio" name="tv" required> Bạc
+                    <input type="radio" name="tv" required> Vàng
+                    <input type="radio" name="tv" required> Bạch Kim
+                </div>
+                <div>
+                    <i style="text-align: center; font-size: 25px; height: 25px; width: 25px;" class="fa">&#xf2c1;</i>
+                    <input type="file">
+                </div>
+                <div class="tick">
+                    <br>
+                    <input type="checkbox" style="top: 0px;" required> 
+                    Thông qua việc tạo tài khoản, bạn đồng ý với 
+                    <a href="#">Điều khoản & Quyền riêng tư của chúng tôi.</a>
+                </div>
+                <div class="submit">
+                    <button>Đăng Ký</button>
+                    <button class="huy">Hủy</button>
+                </div>
+            </form>
+            <br>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2021 Bản quyền thuộc về FreeezeVN.
+            <a href="#"><i></i></a>
+            <a href="#"><i></i></a>
+            <a href="#"><i></i></a>
+        </p>
+    </footer>
+    <a href="#top" class="uptoTOP"><img src="images/top.png" width="60"></a>
+</body>
+</html>
