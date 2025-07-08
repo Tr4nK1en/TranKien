@@ -1,0 +1,291 @@
+body {
+  background: linear-gradient(to bottom, #38485f, #22223c);
+  min-height: 100vh; /* Hoặc 100% */
+  margin: 0;
+}
+
+header,footer,main{
+    max-width: 90% !important;
+}
+
+.center-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.menu-button-effect{
+    position: relative;
+    background-color: rgb(18, 18, 39);
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+    overflow: visible;
+}
+.menu-button-effect::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 1.5px;
+    width: 0;
+    margin-top: 1px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.5s ease;
+}
+.menu-button-effect:hover::after {
+    width: 100%;
+}
+
+/*  */
+
+
+.button-effect{
+    margin: auto;
+    position: relative;
+    background-color: rgb(18, 18, 39);
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+    overflow: visible;
+}
+
+/* Tạo đường gạch dưới ảo */
+.button-effect::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 1.5px;
+    width: 0;
+    margin-top: 1px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0.5s ease;
+}
+
+/* Khi hover, mở rộng đường gạch dưới */
+.button-effect:not(.choose):hover::after {
+    width: 100%;
+}
+
+
+/*  */
+
+.choose{
+    border-bottom: 1.8px white solid;
+    padding-bottom: 4px;
+    position: relative;
+    top: 2px;
+}
+
+.search-input{
+    justify-content: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border: none;
+}
+header{
+    background-color: rgb(18, 18, 39);
+}
+
+.container{
+    max-width: 100%;
+}
+
+footer{
+    background-color: rgb(18, 18, 39);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer p{
+    margin: auto;
+}
+main{
+    margin: 10px;
+    color: white;
+}
+
+.middle{
+    display: flex;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+.menudrop{
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+.logo{
+    width: 50px;
+}
+
+.color1{
+    background-color: none;
+    padding: 15px;
+    margin: auto;
+    color: white;
+    font-size: 25px;
+}
+.search-bar{
+    background-color: black;
+    border-radius: 10px;
+    border: 0.1px white solid;
+    color: white;
+    width: 100%;
+    margin-left: -12px;
+}
+.dropdown-menu {
+    background-color: rgb(18, 18, 39) !important; 
+    color: white;       
+    text-align: center !important; 
+}
+/* .dropdownitem{
+    margin-right: 15px;
+} */
+.customBut1{
+    border: 3px rgb(84, 48, 203) solid;
+    margin: auto;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    color: white;
+    margin-right: -5px;
+}
+.costomBut2{
+    background-color: rgb(84, 48, 203);
+    border: none;
+    color: white;
+    width: 120px;
+    border-radius: 13px;
+    margin-right: -30px;
+}
+.search-button{
+    border: 1px white solid;
+    background-color: rgb(84, 48, 203);
+    text-align: center;
+    font-size: 15px;
+    width: 35px;
+    height: auto;
+    color: white;
+    float: right;
+    border-radius: 20%;
+    margin-right: -10px;
+}
+.search-bar::placeholder{
+    font-size: 13px;
+    text-align: start;
+    justify-content: center;
+    margin: auto;
+    padding-left: 12px;
+}
+.item-index{
+    height: 100%;
+    width: 90%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* chứa ảnh game cần show details */
+.hover-details{
+    position: relative;
+    overflow: hidden;
+
+}
+.details-box{
+    position: absolute;
+    bottom: -500%; /* Ẩn ban đầu */
+    left: 5.5%;
+    right: 0;
+    width: 88.8%; /* Chiếm toàn bộ chiều ngang */
+    height: 100%; /* Chiếm toàn bộ chiều cao của ảnh */
+    background: rgba(84, 48, 203, 0.5);
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+    border-radius: 15px;
+    transition: bottom 0.6s ease;
+}
+.hover-details:hover .details-box{
+    bottom: 0;
+}
+
+/* video details */
+.video-details{
+    position: relative;
+    width: 80% ;
+    border-radius: 15px;
+    top: -5px;
+}
+
+.buy-button{
+    border: none;
+    background-color: rgb(84, 48, 203);
+    color: white;
+    text-align: center;
+    font-size: 1vw;
+}
+.buy-button:hover{
+    border: none;
+    background-color:white;
+    color:  rgb(84, 48, 203);
+}
+
+.discount-tag{
+    background-color: rgb(227, 211, 26);
+    position: relative;
+}
+.discount-num-tag{
+    background-color: #38485f;
+    font-size: 0.8vw;
+
+}
+.discount-num-tag p{
+    margin: auto;
+    margin-top: 5%;
+}
+
+/* Phần Game nổi bật */
+/* Class khi được chọn */
+.selected-border {
+  border: 3px solid white;
+  border-radius: 10px;
+}
+/* section3 */
+
+.section3{
+    background-color: #020e20;
+}
+.dcnn img{
+    width: 90%;
+    border-radius: 15px;
+}
+
+.czoom {
+  position: relative;
+  overflow: hidden;
+  height: 200px; /* hoặc chiều cao ảnh cố định */
+}
+
+.zoom {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease;
+}
+
+.czoom:hover .zoom {
+  width: 100%;
+}
+
+footer a{
+    text-decoration: none !important;
+    color: rgb(84, 48, 203);
+}
