@@ -79,3 +79,33 @@ footer {
   opacity: 1;
   transition: opacity 0.5s ease;
 }
+
+
+
+/* eff 2 */
+.image-container {
+  position: relative;
+  width: 300px; /* hoặc kích thước bạn muốn */
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.details {
+  position: absolute;
+  bottom: -100%; /* Ẩn khỏi view */
+  left: 0;
+  width: 100%;
+  /* background: rgba(0, 0, 0, 0.7); nền mờ */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  transition: bottom 0.5s ease; /* hiệu ứng trượt */
+}
+
+.image-container:hover .details {
+  bottom: 0; /* Khi hover, trượt lên */
+}
