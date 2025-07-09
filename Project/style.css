@@ -204,6 +204,11 @@ main{
     border: 0.5vw rgb(255, 255, 193) solid;
 }
 
+
+.section2contain img{
+    border-radius: 2vh;
+}
+
 /* chứa ảnh game cần show details */
 .hover-details{
     position: relative;
@@ -272,16 +277,19 @@ main{
 
 .section3{
     background: linear-gradient(to bottom, #22223c, #38485f);
-    margin: 0;
+    margin: auto;
+    height: fit-content;
 }
 .dcnn img{
-    border-radius: 2vh;
+    border-radius: 2vw;
+    width: 23vw;
 }
 
 .czoom {
     position: relative;
     overflow:visible;
-    height: 30vh;
+    max-height: 15vw;
+    height: 15vw;
 }
 
 .zoom {
@@ -296,41 +304,62 @@ main{
 .details-box1 {
     position: absolute;
     right: 0;   
-    left: 10%;
+    left: 20%;
     opacity: 0;
-    width: 80%; 
-    height: 60%; 
+    width: 18vw; 
+    height: 5vw; 
     background: white;
     color: rgba(84, 48, 203, 0.5);
     text-align: center;
     font-size: 1vw;
-    border-radius: 2vh;
+    border-radius: 1vh;
 }
 /* Phần mủi nhọn */
 .details-box1::after {
     content: '';
     position: absolute;
     left: 50%; /* Căn giữa mũi nhọn theo chiều ngang của .details-box1 */
-    top: -2vh; /* Đặt mũi nhọn trên phần .details-box1 */
+    top: -1vw; /* Đặt mũi nhọn trên phần .details-box1 */
     transform: translateX(-50%); /* Căn giữa mũi nhọn theo chiều ngang */
     width: 0;
     height: 0;
-    border-left: 15vh solid transparent; /* Mũi nhọn có màu trong suốt */
-    border-right: 15vh solid transparent; /* Mũi nhọn có màu trong suốt */
-    border-bottom: 15vh solid white; /* Mũi nhọn có màu trắng và hướng lên trên */
+    border-left: 2vw solid transparent; /* Mũi nhọn có màu trong suốt */
+    border-right: 2vw solid transparent; /* Mũi nhọn có màu trong suốt */
+    border-bottom: 2vw solid white; /* Mũi nhọn có màu trắng và hướng lên trên */
     transition: top 0.4s ease; /* Thêm hiệu ứng khi mũi nhọn xuất hiện */
 }
 
 .czoom:hover .details-box1{
-    top: 115%;
+    top: 90%;
     opacity: 55%;
 }
 .czoom:hover .zoom {
-  width: 100%;
+    width: 100%;
 }
 
 
 footer a{
     text-decoration: none !important;
     color: rgb(84, 48, 203);
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.multiline-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;     /* Số dòng muốn hiển thị */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* section 4 */
+
+.item-index1{
+    height: 95%;
+    width: 95%;
+    object-fit: cover;
 }
