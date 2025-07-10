@@ -253,14 +253,40 @@ main{
     background-color:white;
     color:  rgb(84, 48, 203);
 }
+.buy-button2{
+    border: none;
+    background-color: rgb(33, 165, 12);
+    color: white;
+    text-align: center;
+    font-size: 2vh;
+    padding: 0.6vh;
+}
+.buy-button2:hover{
+    border: none;
+    background-color:white;
+    color:   rgb(33, 165, 12);
+}
 
 .discount-tag{
     background-color: rgb(227, 211, 26);
     position: relative;
 }
+.discount-tag2{
+    background-color: rgb(227, 211, 26);
+    position: relative;
+    font-size: 2.8vh;
+}
+
 .discount-num-tag{
     background-color: #38485f;
     font-size: 0.8vw;
+}
+.discount-num-tag2{
+    background-color: #74438f;
+}
+.discount-num-tag2 p{
+    margin: 0.6vh;
+    font-size: 2vh;
 }
 .discount-num-tag p{
     margin: auto;
@@ -362,4 +388,14 @@ footer a{
     height: 95%;
     width: 95%;
     object-fit: cover;
+}
+.readmore-button{
+    background-color: white;
+    color: rgb(84, 48, 203); 
+    font-size: 3vh; 
+    margin-top: -2vh;
+}
+.readmore-button:hover{
+    color: white;
+    background-color: rgb(84, 48, 203); 
 }
