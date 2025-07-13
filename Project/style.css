@@ -399,3 +399,53 @@ footer a{
     color: white;
     background-color: rgb(84, 48, 203); 
 }
+
+/* Login and register */
+
+.opacity-bg{
+    background: linear-gradient(to top, #38485f, #22223c);
+    margin: 0;
+    opacity: 90%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.login-input{
+    background-color: #22223c;
+    width: 35vw;
+    border: 1px white solid;
+    border-radius: 10px;
+    height: 2.5rem;
+    color:white;
+    text-align: center;
+}
+.login-input::placeholder{
+    color: white; 
+    text-align: center;
+    font-size: 1rem;
+    opacity: 90%;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+input[type="checkbox"].custom-check {
+  accent-color: #5430cb;
+}
+
+.login-button{
+    background-color: rgb(84, 48, 203);
+    border: none;
+    color: white;
+    width: 9rem;
+    height: 3rem;
+    font-size: 1.2rem;
+}
+.form-bg {
+  background-image: url(./images/Login_Register/1364878.png);
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: 88.9vw ;
+  height: 100%; 
+}
